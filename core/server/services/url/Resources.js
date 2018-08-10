@@ -238,7 +238,7 @@ class Resources {
             return;
         }
 
-        delete this.data[type][index];
+        this.data[type].splice(index, 1);
         resource.remove();
     }
 
